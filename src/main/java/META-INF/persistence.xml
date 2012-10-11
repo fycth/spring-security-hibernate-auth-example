@@ -1,0 +1,14 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="hibernatePersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <!--
+                update - to store DB data between application restarts
+                create - DB will be emptied with every application restart
+            -->
+            <!-- <property name="hibernate.hbm2ddl.auto" value="create" /> -->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+    </persistence-unit>
+
+</persistence>
